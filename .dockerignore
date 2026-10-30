@@ -1,0 +1,10 @@
+.git
+.idea
+.venv
+**/node_modules
+**/dist
+**/__pycache__
+**/.pytest_cache
+work
+*.log
+.env

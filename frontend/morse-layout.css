@@ -1,0 +1,96 @@
+/* Compact training layout: actual reflow, preserving normal page zoom and controls. */
+.morse-sidebar-divider{border:0;border-top:1px solid var(--line);margin:20px 0}
+.morse-title-actions{display:flex;gap:8px;flex-shrink:0}
+.morse-title-actions button{font-size:11px;white-space:nowrap}
+.morse-sidebar h2{margin-top:12px}
+.morse-compact>header{height:54px;padding:0 24px;gap:18px}
+.morse-compact>header .brand{font-size:23px}
+.morse-compact>header .appearance-trigger{padding:5px 10px;font-size:12px}
+.morse-compact>footer{display:none}
+.morse-compact main,.morse-compact[data-density=compact] main{padding:12px 24px 16px;max-width:1500px;min-height:calc(100dvh - 54px)}
+.morse-compact .breadcrumb{font-size:11px;line-height:1.3}
+.morse-compact .title-row{margin:7px 0 10px;gap:10px;align-items:center}
+.morse-compact .title-row h1{font-size:28px;letter-spacing:-1px}
+.morse-compact .title-row p{font-size:12px;margin:3px 0 0}
+.morse-compact .controls{padding:9px 12px;gap:9px 14px;line-height:1.3}
+.morse-compact .controls label{font-size:11px;gap:6px}
+.morse-compact .controls select,.morse-compact .controls input:not([type=range]):not([type=checkbox]){padding:6px 7px;font-size:11px}
+.morse-compact .controls input[type=range]{width:75px}
+.morse-compact #practice{width:135px}
+.morse-compact nav{margin:10px 0;gap:6px}
+.morse-compact nav button{font-size:12px;padding:7px 10px;min-height:34px}
+.morse-compact .workspace{gap:12px;align-items:start}
+.morse-compact .panel{padding:14px;line-height:1.4}
+.morse-compact .panel h2{font-size:18px;margin:0 0 9px}
+.morse-compact .panel p{margin:7px 0}
+.morse-compact .panel .eyebrow{font-size:9px;letter-spacing:1px;line-height:1.3}
+.morse-compact .panel> .eyebrow{margin-bottom:5px}
+.morse-compact .small{font-size:11px}
+.morse-compact .signal{min-height:96px;margin:10px 0;padding:12px}
+.morse-compact .signal .letter{font-size:50px}
+.morse-compact .code{font-size:27px;letter-spacing:4px}
+.morse-compact .chant{font-size:19px;margin-top:4px}
+.morse-compact .row{gap:7px;margin:8px 0}
+.morse-compact .panel button{font-size:12px;padding:7px 10px;min-height:34px}
+.morse-compact .panel .key{padding:13px 10px;min-height:48px;font-size:12px}
+.morse-compact .notice{padding:8px 10px;margin-top:9px;font-size:12px}
+.morse-compact .stat{padding:8px 0;font-size:12px;gap:6px}
+.morse-compact .stat strong{font-size:19px}
+.morse-compact .morse-sidebar h2{margin-top:7px;font-size:16px}
+.morse-compact .morse-sidebar details{margin-top:10px}
+.morse-compact .morse-sidebar-divider{margin:12px 0}
+.morse-compact .morse-sidebar>p{font-size:12px;line-height:1.5}
+.morse-compact .morse-sidebar>p.small{font-size:10px}
+.morse-compact #stats>.small{font-size:10px;line-height:1.4}
+.morse-compact #stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.morse-compact #stats>.stat{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;border-bottom:0;border-right:1px solid var(--line);padding:6px 4px 6px 0;font-size:10px}
+.morse-compact #stats>.stat:nth-child(3){border-right:0}
+.morse-compact #stats>.small{grid-column:1/-1;margin:0 0 3px}
+:root[data-density=compact] .morse-compact main{padding-top:12px}
+:root[data-density=compact] .morse-compact .panel{padding:14px}
+:root[data-density=compact] .morse-compact .controls{padding:9px 12px;gap:9px 14px}
+.morse-compact #exercise[data-mode=learn]{display:grid;grid-template-columns:minmax(155px,.65fr) minmax(310px,1.6fr);gap:8px 16px}
+.morse-compact #exercise[data-mode=learn]>.eyebrow{display:none}
+.morse-compact #exercise[data-mode=learn]>h2{grid-column:1/-1;grid-row:1;margin:0}
+.morse-compact #exercise[data-mode=learn]>.signal{grid-column:1;grid-row:2;margin:0;align-self:stretch;min-height:130px}
+.morse-compact #exercise[data-mode=learn]>.signal>.small{display:none}
+.morse-compact #exercise[data-mode=learn]>.card-key-answer{grid-column:2;grid-row:2/span 2;margin:0;padding:0;border:0;min-width:0}
+.morse-compact .card-key-answer>label{font-size:10px}
+.morse-compact .card-key-answer>.small{line-height:1.4;margin:5px 0 8px}
+.morse-compact .card-key-answer .signal{min-height:55px;padding:6px 10px;margin:7px 0}
+.morse-compact .card-key-answer .row{margin:7px 0 0;gap:5px}
+.morse-compact .card-key-answer .row button{flex:1;padding:6px;font-size:11px}
+.morse-compact #exercise[data-mode=learn]>.row{grid-column:1;grid-row:3;margin:0;align-self:start;display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.morse-compact #exercise[data-mode=learn]>.row button{font-size:11px;padding:6px}
+.morse-compact #exercise[data-mode=learn]>.notice{grid-column:1/-1;grid-row:4;margin:0;min-height:33px}
+.morse-compact .lettergrid{grid-template-columns:repeat(auto-fill,minmax(125px,1fr));gap:7px}
+.morse-compact .lettercard{padding:10px}
+.morse-compact .lettercard code{font-size:19px;margin:3px 0}
+.morse-compact textarea{min-height:80px}
+#morseText{min-height:160px;font-family:var(--amuz-mono,monospace);line-height:1.65;letter-spacing:.08em;resize:vertical}
+.morse-compact #morseText{min-height:136px}
+@media(max-width:1050px){.morse-compact #exercise[data-mode=learn]{grid-template-columns:minmax(110px,.55fr) minmax(235px,1.4fr);gap:8px 12px}.morse-compact #exercise[data-mode=learn]>.row{grid-template-columns:1fr}.morse-compact .card-key-answer .row{flex-wrap:wrap}.morse-compact .card-key-answer .row button{flex:1 1 90px}}
+@media(max-width:800px){
+  .morse-compact>header{padding:0 14px;height:54px}.morse-compact>header .brand{font-size:20px}
+  .morse-compact main{padding:9px 12px 16px}.morse-compact .title-row h1{font-size:25px}.morse-compact .title-row p{font-size:11px}
+  .morse-compact .controls{padding:8px;gap:8px 12px}.morse-compact .controls input[type=range]{width:68px}
+  .morse-compact .workspace{grid-template-columns:1fr}.morse-compact .morse-sidebar{display:grid;grid-template-columns:1fr 1fr;column-gap:18px}
+  .morse-compact .morse-sidebar>.eyebrow,.morse-compact .morse-sidebar>h2,.morse-compact .morse-sidebar>#stats,.morse-compact .morse-sidebar>details{grid-column:1}
+  .morse-compact .morse-sidebar>.eyebrow:not(:first-child){grid-column:2;grid-row:1}
+  .morse-compact .morse-sidebar>p:not(.small){grid-column:2;grid-row:2/span 2}
+  .morse-compact .morse-sidebar>p.small{grid-column:2;grid-row:4/span 2}
+  .morse-compact .morse-sidebar-divider{display:none}
+}
+@media(max-width:480px){
+  .morse-compact>header .brand{font-size:18px}.morse-compact>header .appearance-current{display:none}.morse-compact>header .appearance-trigger{font-size:11px;gap:6px}
+  .morse-compact .title-row{margin:5px 0 8px}.morse-compact .title-row p{font-size:10px;max-width:190px}.morse-compact .morse-title-actions button{font-size:10px;padding:6px 8px}
+  .morse-compact .controls{gap:8px 10px}.morse-compact .controls label{font-size:10px}.morse-compact .controls #practice{width:115px}
+  .morse-compact nav{gap:5px;margin:8px 0;display:grid;grid-template-columns:repeat(3,1fr)}.morse-compact nav button{font-size:10px;padding:5px;min-height:32px;white-space:nowrap}
+  .morse-compact .panel{padding:10px}.morse-compact .panel h2{font-size:16px}
+  .morse-compact #exercise[data-mode=learn]{grid-template-columns:90px minmax(0,1fr);gap:8px}
+  .morse-compact .card-key-answer>.small{font-size:10px;line-height:1.35}.morse-compact .card-key-answer .key{min-height:48px;padding:10px 7px;font-size:10px}
+  .morse-compact .card-key-answer .row button{flex:1 1 65px;font-size:10px;padding:5px;min-height:32px}
+  .morse-compact .card-key-answer .signal{min-height:49px}.morse-compact .card-key-answer .signal .small{font-size:9px}
+  .morse-compact .signal .letter{font-size:44px}.morse-compact .code{font-size:22px;letter-spacing:2px}.morse-compact .chant{font-size:14px;overflow-wrap:anywhere}
+  .morse-compact #exercise[data-mode=learn]>.row button{font-size:10px;min-height:36px}.morse-compact .notice{font-size:11px}
+}

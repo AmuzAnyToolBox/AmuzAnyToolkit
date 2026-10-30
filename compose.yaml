@@ -1,0 +1,24 @@
+name: amuzanytoolkit
+services:
+  web:
+    build: .
+    ports:
+      - "${AMUZ_BIND:-127.0.0.1}:${AMUZ_PORT:-8010}:8010"
+    init: true
+    restart: unless-stopped
+    read_only: true
+    volumes:
+      - video-data:/data
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+volumes:
+  video-data:

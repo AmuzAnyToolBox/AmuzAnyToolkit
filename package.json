@@ -1,0 +1,13 @@
+{
+  "name": "amuz-any-toolkit",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm --prefix tools/ascii/frontend run build",
+    "test": "node --test tests/*.test.js && npm --prefix tools/ascii/frontend test",
+    "test:morse": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

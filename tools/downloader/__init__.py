@@ -1,0 +1,1 @@
+"""AmuzFetch video downloader."""

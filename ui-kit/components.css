@@ -1,0 +1,17 @@
+@import './tokens.css';
+@import './scrollbars.css';
+
+/* Native elements and optional amuz-* classes for buildless and Vue tools. */
+*{box-sizing:border-box}
+button,.amuz-button{font:inherit;color:var(--ink);background:var(--ui-field);border:1px solid var(--line);border-radius:var(--ui-radius);padding:10px 16px;cursor:pointer;transition:background .14s,border-color .14s}
+button:hover,.amuz-button:hover{background:var(--ui-hover)}
+button:disabled{opacity:.5;cursor:default}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--ui-accent);outline-offset:3px}
+.amuz-button.primary{background:var(--ui-accent);color:var(--ui-accent-text)}
+input,select,textarea{font:inherit;background:var(--ui-field);color:var(--ink);border:1px solid var(--line);border-radius:var(--ui-radius);padding:9px}
+input[type=range],input[type=checkbox],progress{accent-color:var(--ui-accent)}
+.amuz-panel{padding:var(--amuz-space-4);background:var(--ui-elevated);border:1px solid var(--line);border-radius:var(--ui-radius)}
+.amuz-label{font:11px var(--amuz-mono);letter-spacing:1.5px;color:var(--ui-muted)}
+.amuz-row{display:flex;align-items:center;flex-wrap:wrap;gap:var(--amuz-space-2)}
+.amuz-signal{padding:32px;background:var(--ui-workspace);border:1px solid var(--line);border-radius:var(--ui-radius);font:32px var(--amuz-mono);letter-spacing:6px;text-align:center;color:var(--ink)}
+@media(prefers-reduced-motion:reduce){button,.amuz-button{transition:none}}
